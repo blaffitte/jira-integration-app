@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fr.blaffitte.jira</groupId>
+    <artifactId>jira-integration-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <repositories>
+        <repository>
+            <id>axelor-nexus-repo</id>
+            <url>https://repository.axelor.com/nexus/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>force</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Axelor Open Platform dependencies -->
+        <dependency>
+            <groupId>com.axelor</groupId>
+            <artifactId>axelor-core</artifactId>
+            <version>7.2.3</version>            <!-- Version 7.2 d'Axelor -->
+        </dependency>
+        <!--
+        <dependency>
+            <groupId>org.axelor</groupId>
+            <artifactId>axelor-web</artifactId>
+            <version>7.2.3</version>
+        </dependency>
+        -->
+        <!--
+        <dependency>
+            <groupId>com.axelor.addons</groupId>
+            <artifactId>axelor-studio</artifactId>
+            <version>3.3.6</version>
+        </dependency>
+        -->
+        <!-- Kotlin standard library -->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>1.6.0</version>            <!-- Version de Kotlin -->
+        </dependency>
+
+        <!-- Dépendance pour les appels HTTP (Apache HttpClient pour l'API Jira) -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+
+        <!-- Dépendance pour JSON (utilisé pour le traitement des réponses de l'API Jira) -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
+    </dependencies>
+</project>

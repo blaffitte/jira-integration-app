@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://java.sun.com/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                           http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+
+    <!-- Déclaration des services -->
+    <bean id="jiraService" class="com.axelor.jira.JiraService" scope="singleton"/>
+
+    <!-- Déclaration des contrôleurs -->
+    <bean id="jiraController" class="com.axelor.jira.JiraController" scope="singleton"/>
+
+    <!-- Ajoutez d'autres beans nécessaires pour votre module -->
+</beans>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intégration Jira</title>
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <h1>Intégration Jira</h1>
+
+    <!-- Formulaire pour entrer la clé du ticket Jira -->
+    <div>
+        <label for="issueKeyInput">Clé du ticket Jira :</label>
+        <input type="text" id="issueKeyInput" placeholder="Ex: PROJ-123">
+    </div>
+
+    <!-- Bouton pour récupérer les informations du ticket Jira -->
+    <button id="fetchTicketButton">Récupérer le ticket</button>
+
+    <!-- Affichage des informations du ticket -->
+    <div>
+        <h3>Informations du ticket :</h3>
+        <p><strong>Résumé : </strong><span id="ticket-summary"></span></p>
+        <p><strong>Status : </strong><span id="ticket-status"></span></p>
+    </div>
+
+</body>
+</html>
